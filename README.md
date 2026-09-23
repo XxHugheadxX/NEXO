@@ -1,7 +1,9 @@
 # Landing Speaker — Grok Bot @ SpaceX Santa Cruz
 
 Landing estática en español para la charla de **William Yucra** sobre Grok Bot.
-Demo en vivo: esta misma página, construida con Grok Bot.
+Demo en vivo: esta misma página, construida con Grok Bot como Jefe de gabinete.
+
+Repo: [XxHugheadxX/NEXO](https://github.com/XxHugheadxX/NEXO)
 
 ## Abrir en local
 
@@ -16,40 +18,21 @@ Listo. Todo el CSS está en `styles.css` (fuentes del sistema, sin CDN).
 
 | Ruta | Rol |
 |------|-----|
-| `index.html` | Página completa (hero + secciones) |
-| `styles.css` | Tema oscuro, responsive |
+| `index.html` | Página completa (hero + secciones, mapa y potencial) |
+| `styles.css` | Tema oscuro premium, responsive |
 | `docs/BRIEF.md` | Brief original del kickoff |
+| `docs/ORQUESTACION.md` | Cómo trabaja el Jefe + RACI + loops |
+| `docs/POTENCIAL.md` | Qué se demostró (sep 14–23) y qué sigue |
 | `docs/PROCESO.md` | Guion del making-of para escenario |
-| `docs/TIMELOG.md` | Log de sesiones (19 y 23 sep 2026) |
+| `docs/TIMELOG.md` | Log de sesiones |
 | `docs/CHECKLIST-EVENTO.md` | Checklist pre-charla |
-
-## Subir a tu GitHub (cuando tengas el repo)
-
-Desde tu máquina, con Git instalado:
-
-```bash
-cd grokbot-speaker-landing
-git init
-git add .
-git commit -m "Landing speaker Grok Bot — SpaceX Santa Cruz"
-git branch -M main
-git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
-git push -u origin main
-```
-
-O sube el ZIP desde la UI de GitHub: **Add file → Upload files**.
-
-### Hosting estático rápido
-
-- **GitHub Pages:** Settings → Pages → branch `main` / root.
-- **Netlify / Cloudflare Pages:** arrastra la carpeta o conecta el repo.
-- La home debe apuntar a `index.html`.
 
 ## Scope
 
 - Idioma: español (es-BO), tono “tú”.
-- Fuera de scope: Tangem, campañas crypto, npm.
+- Fuera de scope en la landing pública: pitch de productos ajenos a la charla; npm.
 - Solo HTML/CSS estático.
+- Push solo a este repo cuando el humano lo autorice.
 
 ## Licencia / uso
 

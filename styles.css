@@ -311,3 +311,97 @@ footer p { margin: 0 0 0.4rem; }
   section { padding: 1.25rem 1.1rem; }
   .hero { padding-top: 2rem; }
 }
+
+/* Orchestration map */
+.orch-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 1.1rem 0;
+}
+@media (min-width: 640px) {
+  .orch-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.orch-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.05rem;
+}
+.orch-card h3 {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 1.02rem;
+}
+.orch-card p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.orch-tag {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.orch-jefe {
+  border-color: rgba(29, 161, 242, 0.45);
+  background: linear-gradient(145deg, rgba(29, 161, 242, 0.1), var(--bg-elevated) 55%);
+}
+@media (min-width: 640px) {
+  .orch-jefe { grid-column: 1 / -1; }
+}
+
+.raci-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin: 1rem 0 0.5rem;
+  padding: 0.85rem 1rem;
+  background: var(--bg-elevated);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+@media (min-width: 640px) {
+  .raci-strip { grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+}
+.raci-strip strong {
+  color: var(--accent);
+  margin-right: 0.25rem;
+}
+
+.muted-note {
+  margin-top: 0.85rem !important;
+  color: var(--muted) !important;
+  font-size: 0.9rem;
+}
+
+.cards-2 {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .cards-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+.subhead {
+  margin: 1.25rem 0 0.6rem;
+  font-size: 1.05rem;
+  color: var(--fg);
+}
+
+.next-list {
+  margin: 0.4rem 0 0;
+  padding-left: 1.15rem;
+  color: var(--muted);
+}
+.next-list li { margin: 0.4rem 0; }
+.next-list strong { color: var(--fg); }
+
+.compact-ref {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.compact-ref p { margin-bottom: 0; color: var(--muted); }

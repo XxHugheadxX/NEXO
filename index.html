@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="William Yucra presenta Grok Bot en SpaceX Santa Cruz: cómo orquestar equipos de bots y construir esta landing como demo en vivo." />
+  <meta name="description" content="William Yucra presenta Grok Bot en SpaceX Santa Cruz: orquestación de bots especialistas, potencial demostrado y esta landing como demo en vivo." />
   <title>William Yucra — Grok Bot | SpaceX Santa Cruz</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -16,7 +16,8 @@
       <ul class="nav-links">
         <li><a href="#quien-soy">Quién soy</a></li>
         <li><a href="#que-es">Qué es</a></li>
-        <li><a href="#como-trabaja">Cómo trabaja</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        <li><a href="#potencial">Potencial</a></li>
         <li><a href="#demo">Demo</a></li>
         <li><a href="#proceso">Proceso</a></li>
       </ul>
@@ -27,8 +28,9 @@
     <p class="eyebrow">SpaceX Santa Cruz · Speaker</p>
     <h1>William Yucra</h1>
     <p class="lede">
-      Builder y speaker. Uso Grok Bot para orquestar equipos de bots especialistas —
-      investigación, marketing, landings — y esta página es la prueba en vivo.
+      Builder y speaker. Uso Grok Bot como Jefe de gabinete para orquestar
+      bots especialistas — research, marketing, landings, auditoría — y esta
+      página es la prueba en vivo.
     </p>
     <p class="hero-meta">Evento: SpaceX Santa Cruz · Charla sobre Grok Bot</p>
   </header>
@@ -43,9 +45,10 @@
       </p>
       <p>
         Mi enfoque es simple: definir el objetivo, repartir el trabajo entre bots
-        con roles claros y revisar el resultado como director de producto.
+        con roles claros (RACI) y revisar el resultado como director de producto.
         Grok Bot es el orquestador que me permite hacer eso sin perder el
-        control creativo ni técnico.
+        control creativo ni técnico — y sin que nadie toque un repo que yo no
+        haya autorizado.
       </p>
     </section>
 
@@ -68,43 +71,103 @@
         </article>
         <article class="card">
           <h3>Deja rastro</h3>
-          <p>Produce artefactos listos para presentar: landing, proceso, checklist.</p>
+          <p>Produce artefactos listos para presentar: landing, proceso, TIMELOG.</p>
         </article>
       </div>
     </section>
 
-    <section id="como-trabaja" aria-labelledby="h-como">
-      <h2 id="h-como">Cómo gestiona el trabajo con bots</h2>
+    <section id="mapa" aria-labelledby="h-mapa">
+      <h2 id="h-mapa">Mapa de orquestación</h2>
       <p>
-        La clave no es un solo bot que lo hace todo. Es un equipo de bots
-        especialistas y un rol de bróker / orquestador que reparte, prioriza y
-        integra.
+        La clave no es un solo bot que lo hace todo. Es un gabinete: el
+        <strong>Jefe</strong> reparte, integra y cuida el scope; tú decides
+        prioridades y repos.
       </p>
-      <ul class="role-list">
-        <li>
-          <strong>Orquestador (Grok Bot / “Jefe”)</strong> —
-          entiende el brief, define secciones, integra el HTML y cuida que nada
-          se salga de scope.
-        </li>
-        <li>
-          <strong>Bot de research</strong> —
-          aclara audiencia, mensajes clave y qué debe quedar fuera (por ejemplo,
-          temas que no pertenecen a esta charla).
-        </li>
-        <li>
-          <strong>Bot de marketing / copy</strong> —
-          propone textos en español claro, tono “tú”, listos para escenario.
-        </li>
-        <li>
-          <strong>Bot de landing / UI</strong> —
-          arma estructura, estilos y responsividad para que la página se vea
-          presentable en móvil y desktop.
-        </li>
-      </ul>
+      <div class="orch-grid" role="list">
+        <article class="orch-card orch-jefe" role="listitem">
+          <p class="orch-tag">Bróker</p>
+          <h3>Jefe / orquestador</h3>
+          <p>Interpreta el brief, abre tickets, integra HTML/docs y cierra el loop con TIMELOG.</p>
+        </article>
+        <article class="orch-card" role="listitem">
+          <p class="orch-tag">Especialista</p>
+          <h3>Research</h3>
+          <p>Audiencia, hechos, mensajes clave y qué debe quedar fuera de la charla.</p>
+        </article>
+        <article class="orch-card" role="listitem">
+          <p class="orch-tag">Especialista</p>
+          <h3>Marketing / copy</h3>
+          <p>Textos en español claro, tono “tú”, listos para escenario o campaña de marca.</p>
+        </article>
+        <article class="orch-card" role="listitem">
+          <p class="orch-tag">Especialista</p>
+          <h3>UI / landing</h3>
+          <p>Estructura, estilos dark premium y mobile-first sin npm ni CDN.</p>
+        </article>
+        <article class="orch-card" role="listitem">
+          <p class="orch-tag">Calidad</p>
+          <h3>Auditor</h3>
+          <p>Checklist de scope, idioma, contraste y “¿esto debía estar aquí?”.</p>
+        </article>
+        <article class="orch-card" role="listitem">
+          <p class="orch-tag">Filtro</p>
+          <h3>Scout / validator</h3>
+          <p>Valida ideas (sí/no + por qué). No construye el producto: filtra antes de invertir.</p>
+        </article>
+      </div>
+      <div class="raci-strip" aria-label="RACI resumido">
+        <div><strong>R</strong> Especialista escribe</div>
+        <div><strong>A</strong> Jefe responde si falla la integración</div>
+        <div><strong>C</strong> Se consulta research / humano</div>
+        <div><strong>I</strong> TIMELOG informa el cierre</div>
+      </div>
+      <p class="muted-note">
+        Detalle completo en <code>docs/ORQUESTACION.md</code>.
+      </p>
+    </section>
+
+    <section id="potencial" aria-labelledby="h-potencial">
+      <h2 id="h-potencial">Potencial: qué ya se hizo</h2>
       <p>
-        El trabajo corre en paralelo cuando hace sentido: mientras uno afina el
-        mensaje, otro deja lista la estructura visual. Tú decides; el equipo
-        ejecuta.
+        Mismo sistema, distintos frentes — trabajo real entre el 14 y el 23 de
+        septiembre 2026. Sin inventar productos: solo lo demostrado.
+      </p>
+      <div class="cards cards-2">
+        <article class="card">
+          <h3>Ops de marketing multi-bot</h3>
+          <p>Research + copy + UI coordinados para campañas de marca y piezas públicas alineadas.</p>
+        </article>
+        <article class="card">
+          <h3>Hackathon Web3 CRM</h3>
+          <p>Equipo de research: problema, competidores e hipótesis — pack para decidir, no un CRM inventado en el chat.</p>
+        </article>
+        <article class="card">
+          <h3>Auto Research Pipeline</h3>
+          <p>Validación de ideas (criterio y riesgos). Explicitamente: no construye el producto.</p>
+        </article>
+        <article class="card">
+          <h3>Esta landing</h3>
+          <p>Demo en vivo: brief → gabinete → HTML/CSS + docs. La estás mirando.</p>
+        </article>
+      </div>
+      <h3 class="subhead">Qué sigue (potencial inmediato)</h3>
+      <ul class="next-list">
+        <li><strong>GitHub Pages</strong> — publicar landings estáticas con un flujo de hosting simple.</li>
+        <li><strong>Rutinas / playbooks</strong> — briefs reutilizables (speaker, research pack, checklist evento).</li>
+        <li><strong>Más especialistas</strong> — slides, SEO, QA de accesibilidad, traductor.</li>
+      </ul>
+      <p class="muted-note">
+        Narrativa extendida en <code>docs/POTENCIAL.md</code>.
+      </p>
+    </section>
+
+    <section id="como-trabaja" aria-labelledby="h-como" class="compact-ref">
+      <h2 id="h-como">Cómo gestiona el trabajo (resumen)</h2>
+      <p>
+        Brief humano → Jefe descompone → especialistas en paralelo → auditor /
+        scout si hace falta → integración + TIMELOG → tú apruebas o ajustas scope.
+        El trabajo corre en paralelo cuando no hay dependencia. Tú decides; el
+        gabinete ejecuta.
       </p>
     </section>
 
@@ -122,18 +185,18 @@
         </li>
         <li>
           <span class="tl-date">23 sep 2026</span>
-          <span class="tl-title">Sprint de copy</span>
-          <span class="tl-body">Placeholders reemplazados por textos en español listos para hablar; bio corta y honesta.</span>
+          <span class="tl-title">Sprint de copy + UI</span>
+          <span class="tl-body">Placeholders → textos en español; nav, cards, timeline; docs de escenario.</span>
         </li>
         <li>
           <span class="tl-date">23 sep 2026</span>
-          <span class="tl-title">Pulido visual</span>
-          <span class="tl-body">Nav sticky, cards, timeline, contraste y mobile-first sin CDN ni npm.</span>
+          <span class="tl-title">Orquestación + potencial</span>
+          <span class="tl-body">Mapa de roles en la página; <code>ORQUESTACION.md</code> y <code>POTENCIAL.md</code> con el trabajo real del gabinete.</span>
         </li>
         <li>
           <span class="tl-date">23 sep 2026</span>
-          <span class="tl-title">Docs de escenario</span>
-          <span class="tl-body"><code>PROCESO.md</code>, <code>TIMELOG.md</code> y checklist pre-charla para que puedas narrar el making-of en vivo.</span>
+          <span class="tl-title">Push a un solo repo</span>
+          <span class="tl-body">Actualización en GitHub solo donde el humano autorizó — scope estricto.</span>
         </li>
       </ol>
     </section>
@@ -142,8 +205,8 @@
       <h2 id="h-proceso">Proceso y viabilidad</h2>
       <p>
         Del kickoff (19 sep) al sprint de cierre (23 sep) hay unos cuatro días
-        de calendario. El scaffold salió en minutos; el copy y el pulido
-        visual ocuparon el sprint de hoy.
+        de calendario. El scaffold salió en minutos; el copy, el mapa de
+        orquestación y el pulido visual ocuparon el sprint de hoy.
       </p>
       <div class="split">
         <div>
@@ -152,30 +215,30 @@
             <li>Definir secciones en el brief</li>
             <li>Generar HTML/CSS estático</li>
             <li>Mantener un solo idioma y tono</li>
-            <li>Empaquetar ZIP listo para subir</li>
+            <li>Documentar roles y TIMELOG</li>
           </ul>
         </div>
         <div>
           <h3>Lo que pide más cuidado</h3>
           <ul>
             <li>Copy honesto sin inventar fechas ni logos</li>
-            <li>Scope estricto (nada fuera de la charla)</li>
+            <li>Scope estricto (repos y temas autorizados)</li>
             <li>Legibilidad en escenario y en móvil</li>
-            <li>Documentar el proceso para contarlo en vivo</li>
+            <li>Separar “validar idea” de “construir producto”</li>
           </ul>
         </div>
       </div>
       <p class="callout">
         Si tienes un brief claro y 1–2 horas enfocadas, puedes replicar una
         landing así con Grok Bot: HTML estático, sin npm, abierta en el
-        navegador. Esta página es la evidencia.
+        navegador. Esta página es la evidencia — y el gabinete es el método.
       </p>
     </section>
   </main>
 
   <footer>
     <p>Hecho con Grok Bot · SpaceX Santa Cruz</p>
-    <p class="footer-note">Abre <code>index.html</code> en tu navegador — sin build, sin servidor.</p>
+    <p class="footer-note">Abre <code>index.html</code> en tu navegador — sin build, sin servidor. Docs: <code>ORQUESTACION.md</code> · <code>POTENCIAL.md</code> · <code>PROCESO.md</code>.</p>
   </footer>
 </body>
 </html>
